@@ -1,0 +1,28 @@
+### Important Information:
+
+This project contains a code that helps acquire temperature and voltage 
+data from a field assited sintering experiment.
+
+The voltage source are written such that it could be address from a customizable 
+NI DAQMX address or a Keithley Multimeter with GPIB Address set to 01. 
+
+Temperature in our case is obtained using optical pyrometer, collected from a 
+customizable NI DAQMX address and scaled according to the pyrometer. 
+
+The output voltage data is scaled based on the peak voltage attainable in 
+the power source and the NI DAQMX. These numbers are also adjustable on the front end.
+
+#### To run experiment:
+Ensure the NI DAQ MX and the Keithley Multimeter has properly connected, the GPIB address of 
+the Keithley Multimeter should be set to 01, and the address of the NI DAQ MX should be set 
+correctly on the software user interface. 
+
+Press start acquisition to collect data. Subplots of voltage and temperature as a function of time 
+will pop up and will update in real time. Real time update of the time, voltage and temperature
+will also be shown on the UI of the software.
+
+Press freeze to pause data acquisition for 10 seconds, while acquisiiton can be closed by 
+pressing close acquisition. The acquired data are automatically saved in real time as the 
+acquisiition prrogresses. The image recorrded on the pop up window can be edited, adjusted and 
+saved directly after closing acquisition.,
+
